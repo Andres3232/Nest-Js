@@ -18,6 +18,11 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Clonar el archivo __env.example__ y renombrar la copia a __.env__ y poner los valores correspondientes.
+6. Levantar el proyecto en dev
+```
+yarn start:dev
+```
 5. Poblar la base de datos
 
 ```
