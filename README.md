@@ -28,3 +28,19 @@ yarn start:dev
 ```
 http://localhost:3000/api/v2/seed
 ```
+
+# Production build
+
+1. crear el archivo __.env.prod__
+2. Llenar las variables de entorno de prod, cambiar el localhost de la variable de mongo por el nombre del contenedor de mongo (ver en el docker compose prod)
+3. Crear la nueva imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+```
+
+# Stack utulizados
+* Nest js
+* Mongo DB
+* Docker
+* TS
